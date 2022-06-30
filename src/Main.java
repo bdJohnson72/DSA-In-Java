@@ -1,5 +1,10 @@
+import trees.BinarySearchTree;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.add(50);
+        tree.add(40);
+        tree.add(45);
     }
 }

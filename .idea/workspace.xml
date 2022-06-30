@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16b0b6e2-7b18-445e-935c-bc5260b85741" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="16b0b6e2-7b18-445e-935c-bc5260b85741" name="Changes" comment="Added array list and positional lists">
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSA_Java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lists/ArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lists/LinkedPositionalList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lists/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lists/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLists/DoublyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLists/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLists/SinglyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLists/SinglyLinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorts/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorts/MergeSortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/trees/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/trees/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA_Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DSA_Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +28,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="IlluminatedCloudWorkspaceSettings">
     <option name="projectWorkspaceSettings">
@@ -53,6 +57,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2ADVm20itbfxI8T8Oct0DBjqTgS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -63,15 +70,115 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="LinkedLists" />
+      <recent name="sorts" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.deleteAtValue">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="DSA_Java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyLinkedListTest.addToFront" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSA_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedLists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LinkedLists" />
+      <option name="MAIN_CLASS_NAME" value="LinkedLists.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="addToFront" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyLinkedListTest.deleteAtValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSA_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedLists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LinkedLists" />
+      <option name="MAIN_CLASS_NAME" value="LinkedLists.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="deleteAtValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyLinkedListTest.insertAfter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSA_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedLists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LinkedLists" />
+      <option name="MAIN_CLASS_NAME" value="LinkedLists.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="insertAfter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyLinkedListTest.isEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSA_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedLists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LinkedLists" />
+      <option name="MAIN_CLASS_NAME" value="LinkedLists.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="isEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SinglyLinkedListTest.deleteAtValue" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.insertAfter" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.addToFront" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.isEmpty" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -82,8 +189,27 @@
       <updated>1654544303549</updated>
       <workItem from="1654544305080" duration="2723000" />
       <workItem from="1654553245372" duration="5492000" />
-      <workItem from="1654888931953" duration="4609000" />
+      <workItem from="1654888931953" duration="5743000" />
+      <workItem from="1655127154342" duration="626000" />
+      <workItem from="1655197834629" duration="4348000" />
+      <workItem from="1655296865568" duration="590000" />
+      <workItem from="1655371073153" duration="3425000" />
+      <workItem from="1655494900570" duration="4835000" />
+      <workItem from="1655657010990" duration="4895000" />
+      <workItem from="1655817129989" duration="634000" />
+      <workItem from="1655823405491" duration="18000" />
+      <workItem from="1656328814636" duration="2898000" />
+      <workItem from="1656361272747" duration="2262000" />
+      <workItem from="1656496880598" duration="2472000" />
     </task>
+    <task id="LOCAL-00001" summary="Added array list and positional lists">
+      <created>1654939607994</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654939607994</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,5 +225,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added array list and positional lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added array list and positional lists" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
